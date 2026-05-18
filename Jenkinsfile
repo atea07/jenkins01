@@ -1,21 +1,20 @@
 pipeline {
   agent any
-
   stages {
-    stage("Build") {
-      steps {
-        echo "This is testing of Jenkins build stage!"
+    stage("build") {
+      step {
+        echo "Testing build stage..."
       }
     }
-    stage("Test") {
-      steps {
-        echo "This is testing of Jenkins test stage!"
+    stage("test") {
+      step {
+        echo "Testing test stage..."
       }
     }
-    stage("Deploy") {
-      steps {
-        echo "This is testing of Jenkins deploy stage!"
+    stage("deploy") {
+      step {
+        echo "Testing deploy stage..."
       }
-    }
+    }    
   }
 }
