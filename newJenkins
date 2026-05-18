@@ -2,7 +2,7 @@ pipeline {
   agent { docker { image Python 3.14.x } }
   stages {
     stage("Build") {
-      step {
+      steps {
          sh "python3 --version"
        }
     }
